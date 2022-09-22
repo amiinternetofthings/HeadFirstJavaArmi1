@@ -28,13 +28,13 @@ class DogTestDrive {
 	//int rand = (int) (Math.random() * 100);
 		
 	Dog one = new Dog();
-	one.size = (int) (Math.random() * 200);
+	one.size = (int) (Math.random() * 400);
 	
 	Dog two = new Dog();
-	two.size = (int) (Math.random() * 200);
+	two.size = (int) (Math.random() * 400);
 	
 	Dog three = new Dog();
-	three.size = (int) (Math.random() * 200);
+	three.size = (int) (Math.random() * 400);
 	
 	System.out.println(one.size);	
 	one.bark();
