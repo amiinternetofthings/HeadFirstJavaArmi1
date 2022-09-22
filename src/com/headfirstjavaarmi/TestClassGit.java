@@ -1,4 +1,7 @@
 package com.headfirstjavaarmi;
 
-public class TestClassGit {
+public class   TestClassGit {
+    void makeSomething (){
+
+    }
 }
