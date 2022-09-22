@@ -40,7 +40,9 @@ class ElectricGuitarTestDrive {
         ElectricGuitar eg2 = new ElectricGuitar();
         eg2.setBrand("Yamaha");
         eg2.setNumOfPickUps(10);
+
+        int picks = eg2.getNumOfPickUps();
         System.out.println("The Brand is " + eg2.brand);
-        System.out.println("The number of pickups is " + eg2.numOfPickUps);
+        System.out.println("The number of pickups is " + picks);
     }
 }
