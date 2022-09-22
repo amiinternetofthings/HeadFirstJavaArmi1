@@ -14,12 +14,12 @@ class Dog {
 		}
 	}
 	
-	void bark2(int numOfBarks) {
-		while (numOfBarks > 0) {
-			System.out.print("ruff!  ");
-			numOfBarks = numOfBarks - 1;
-		}
-	}
+//	void bark2(int numOfBarks) {
+//		while (numOfBarks > 0) {
+//			System.out.print("ruff!  ");
+//			numOfBarks = numOfBarks - 1;
+//		}
+//	}
 }
 
 class DogTestDrive {
