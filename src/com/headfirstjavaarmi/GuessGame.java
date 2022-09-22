@@ -22,7 +22,7 @@ public class GuessGame {
 		System.out.println("I'm thinking os a number between 0 - 50");
 		
 		while(true) {
-			System.out.println("ANumber to guess is " + targetNumber);
+			System.out.println("Number to guess is " + targetNumber);
 			
 			p1.guess();
 			p2.guess();
