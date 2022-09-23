@@ -1,5 +1,10 @@
 package Ch04;
 
+import java.time.Year;
+
+import static java.lang.Boolean.TRUE;
+import static javax.security.auth.callback.ConfirmationCallback.YES;
+
 public class ElectricGuitar{
     String brand;
     int numOfPickUps;
@@ -34,12 +39,15 @@ class ElectricGuitarTestDrive {
         ElectricGuitar eg = new ElectricGuitar();
         eg.setBrand("Gibson");
         eg.setNumOfPickUps(2);
-        System.out.println("The Brand is " + eg.getBrand());
-        System.out.println("The number of pickups is " + eg.numOfPickUps);
+        eg.setRockStartUseIt(TRUE);
+                System.out.println("The Brand is " + eg.getBrand());
+        System.out.println("The number of pickups is " + eg.getNumOfPickUps());
+        System.out.println("Rockstar use it  " + eg.getRockStarUseIt());
 
         ElectricGuitar eg2 = new ElectricGuitar();
         eg2.setBrand("Yamaha");
         eg2.setNumOfPickUps(10);
+        eg2.setRockStartUseIt(TRUE);
         System.out.println("The Brand is " + eg2.brand);
         System.out.println("The number of pickups is " + eg2.numOfPickUps);
     }
