@@ -1,9 +1,6 @@
 package Ch04;
 
-import java.time.Year;
-
 import static java.lang.Boolean.TRUE;
-import static javax.security.auth.callback.ConfirmationCallback.YES;
 
 public class ElectricGuitar{
     String brand;
@@ -29,8 +26,8 @@ public class ElectricGuitar{
         return rockStartUseIt;
     }
 
-    void setRockStartUseIt(boolean yesorNo) {
-        rockStartUseIt = yesorNo;
+    void setRockStartUseIt(boolean YesorNo) {
+        rockStartUseIt = YesorNo;
     }
 }
 
@@ -48,7 +45,7 @@ class ElectricGuitarTestDrive {
         eg2.setBrand("Yamaha");
         eg2.setNumOfPickUps(10);
         eg2.setRockStartUseIt(TRUE);
-        System.out.println("The Brand is " + eg2.brand);
-        System.out.println("The number of pickups is " + eg2.numOfPickUps);
+        System.out.println("The Brand is " + eg2.getBrand());
+        System.out.println("The number of pickups is " + eg2.getNumOfPickUps());
     }
 }
