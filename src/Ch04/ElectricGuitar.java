@@ -3,30 +3,30 @@ package Ch04;
 import static java.lang.Boolean.TRUE;
 
 public class ElectricGuitar{
-    String brand;
-    int numOfPickUps;
-    boolean rockStartUseIt;
+    private String brand;
+    private int numOfPickUps;
+    private boolean rockStartUseIt;
 
-    String getBrand() {
+    public String getBrand() {
         return brand;
     }
-    void setBrand(String aBrand) {
+    public void setBrand(String aBrand) {
         brand = aBrand;
     }
 
-    int getNumOfPickUps() {
+    public int getNumOfPickUps() {
         return numOfPickUps;
     }
 
-    void setNumOfPickUps(int num) {
+    public void setNumOfPickUps(int num) {
         numOfPickUps = num;
     }
 
-    boolean getRockStarUseIt() {
+    public boolean getRockStarUseIt() {
         return rockStartUseIt;
     }
 
-    void setRockStartUseIt(boolean YesorNo) {
+    public void setRockStartUseIt(boolean YesorNo) {
         rockStartUseIt = YesorNo;
     }
 }
