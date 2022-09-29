@@ -1,20 +1,33 @@
 package Ch04;
 
-public class HelloWorld {
-    public static void main(String[] args) {
-        int skye = 100;
-        int daddy = 500;
-        int c = skye;
-        int result = 0;
-        HelloWorld obs = new HelloWorld();
-        result = obs.addAll(skye, daddy);
-        System.out.println(result);
+import java.nio.channels.SelectionKey;
 
+public class HelloWorld {
+    private int skye;
+    private int daddy;
+
+    public void setSkye(int b) {
+        skye = b;
+    }
+    public void setDaddy(int a) {
+        daddy = a;
+    }
+    public int addAll() {
+        return skye + daddy;
+    }
+    public static void main(String[] args) {
+        int x = 100;
+        int y = 0;
+        HelloWorld [] obs = new HelloWorld[x];
+        while (y < x) {
+            obs[y] = new HelloWorld();
+            obs[y].setSkye(y + 20);
+            obs[y].setDaddy(y + 3);
+            System.out.println(obs[y].addAll());
+            y = y + 1;
         }
-    public int addAll(int a, int b) {
-        int sumall;
-        sumall = a + b;
-        return  sumall;
+
 
     }
+
 }
