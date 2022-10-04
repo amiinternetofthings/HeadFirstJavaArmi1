@@ -8,7 +8,7 @@ public class SimpleDotComTestDrive {
         String userGuess = "2";
         String result = dot.checkYourself(userGuess);
         if (result.equals("hit")) {
-            System.out.println("Passsed");
+            System.out.println("Passed");
         } else {
             System.out.println("Missed");
         }
