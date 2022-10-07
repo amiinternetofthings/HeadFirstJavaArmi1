@@ -1,6 +1,7 @@
 package com.headfirstjavaarmi;
 
 public class GuessGame {
+	int y = 0;
 	Player p1;
 	Player p2;
 	Player p3;
@@ -22,6 +23,7 @@ public class GuessGame {
 		System.out.println("I'm thinking os a number between 0 - 50");
 		
 		while(true) {
+
 			System.out.println("ANumber to guess is " + targetNumber);
 			
 			p1.guess();
@@ -55,7 +57,9 @@ public class GuessGame {
 				System.out.println("Game is over.");
 				break;
 			} else {
-				System.out.println("Players will have to try again");
+				System.out.println("Players will have to try again tried count " + y);
+				y = y + 1;
+
 			}
 		}
 	}
@@ -76,3 +80,4 @@ class GameLuncher {
 		game.startGame();
 	}
 }
+
