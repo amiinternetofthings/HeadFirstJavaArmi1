@@ -1,7 +1,5 @@
 package CH05;
 
-import java.time.LocalDate;
-
 public class SimpleDotComGame {
     public static void main (String[] args){
         //Declare variable number of guesses
