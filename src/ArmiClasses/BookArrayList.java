@@ -25,7 +25,7 @@ public class BookArrayList {
 
 class BookArrayListTest {
     public static void main (String[] args) {
-        ArrayList<BookArrayList> myBookList = new ArrayList<BookArrayList>();
+        ArrayList<BookArrayList> myBookList = new ArrayList<>();
         BookArrayList a = new BookArrayList();
         myBookList.add(a);
         a.setBookName("A good book");
@@ -33,10 +33,12 @@ class BookArrayListTest {
         BookArrayList b = new BookArrayList();
         myBookList.add(b);
         b.setBookName("A bad book");
+        b.setIsbn(1238);
         //String result = a.getBookName();
         for (BookArrayList slist : myBookList){
             System.out.println(myBookList.indexOf(slist));
-            System.out.println(slist.getBookName());
+            System.out.print(slist.getBookName() + " ");
+            System.out.println(slist.getIsbn());
 
         }
     }
