@@ -43,6 +43,7 @@ public class GameHelper {
         }
         while (!success & attempts++ < 200) {
             location = (int) (Math.random() * gridSize);
+            System.out.print(" Try " + location); //cheat line
 
             int x = 0;
             success = true;
@@ -57,6 +58,7 @@ public class GameHelper {
                         success = false;
                     }
                 } else {
+                    System.out.print(" used " + location); //cheat line
                     success = false;
                 }
             }

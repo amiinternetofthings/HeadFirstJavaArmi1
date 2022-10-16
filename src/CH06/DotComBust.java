@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class DotComBust {
     private GameHelper helper = new GameHelper();
-    private ArrayList<DotCom> dotComsList = new ArrayList<DotCom>();
+    private ArrayList<DotCom> dotComsList = new ArrayList<>();
     private int numofGuesses = 0;
 
     private void setUpGame() {

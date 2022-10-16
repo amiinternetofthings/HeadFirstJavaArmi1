@@ -8,6 +8,7 @@ public class DotCom {
     public void setLocationCells(ArrayList<String> loc) {
 
         locationCells = loc;
+        System.out.println(locationCells); //this will show locations cell
     }
     public void setName(String n) {
         name = n;
