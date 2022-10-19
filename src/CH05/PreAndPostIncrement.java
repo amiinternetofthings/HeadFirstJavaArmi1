@@ -10,6 +10,7 @@ public class PreAndPostIncrement {
         c = ++b;
         d = a++;
         c++;
+
         System.out.println("a = " + a + " b = " + b + " c = " + c + " d = " + d);
     }
 }
