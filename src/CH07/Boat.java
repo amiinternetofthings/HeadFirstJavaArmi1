@@ -30,13 +30,14 @@ class TestBoats{
         b1.move();
         b3.move();
         b2.move();
+        b3.rowTheBoat();
 
 
     }
 }
 class Sailboat extends Boat {
     public void move() {
-        System.out.print("hoist sail");
+        System.out.print("hoist sail ");
     }
 
 }
