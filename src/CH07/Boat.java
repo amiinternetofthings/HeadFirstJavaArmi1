@@ -3,6 +3,7 @@ package CH07;
 
 class Rowboat extends Boat {
     public void rowTheBoat() {
+
         System.out.println("stroke natasha ");
     }
 }
@@ -10,12 +11,15 @@ class Rowboat extends Boat {
 class Boat {
     private int length;
     public void setLength(int len) {
+
         length = len;
     }
     public int getLength() {
+
         return length;
     }
     public void  move() {
+
         System.out.print("drift ");
     }
 
@@ -31,8 +35,6 @@ class TestBoats{
         b3.move();
         b2.move();
         b3.rowTheBoat();
-
-
     }
 }
 class Sailboat extends Boat {
