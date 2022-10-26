@@ -1,6 +1,6 @@
 package amireading;
 
-public class Read {
+public class XRead {
     void startRead(Meter a) {
         int result = a.getMeterCount();
         System.out.println("Meter Reads: "  +result);
