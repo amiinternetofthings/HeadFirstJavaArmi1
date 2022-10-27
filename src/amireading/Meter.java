@@ -16,7 +16,9 @@ public abstract class Meter {
         return meterCount;
     }
 
-
+    public String getMeterNumber() {
+        return meterNumber;
+    }
 }
 
 class ElectricMeter extends Meter {
@@ -30,12 +32,13 @@ class Read {
     public void startRead(Meter a) {
 
         int result = a.getMeterCount();
+        String aname = a.getMeterNumber();
 
 
         if (a.getClass().equals(ElectricMeter.class)) {
-            System.out.println("Electric Reads: " + result);
+            System.out.println(aname+  " Electric Reads: " + result);
         }else {
-            System.out.println("Water Reads: " + result);
+            System.out.println(aname+ " Water Reads: " + result);
         }
     }
 }
