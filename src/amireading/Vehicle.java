@@ -28,9 +28,8 @@ class Sedan extends Vehicle {
         return brand;
     }
 
-
-
 }
+
 
 class VehicleTest {
     public static void main(String[] args)  {
@@ -39,8 +38,11 @@ class VehicleTest {
         sedan.setsNumber(7777);
         String brandName = sedan.getBrand();
         int serialNumber = sedan.getsNumber();
-
         System.out.println("Brand Name is: " +brandName +"   -   " + "Serial Number is: " +serialNumber);
+
+
+
     }
 }
+
 
