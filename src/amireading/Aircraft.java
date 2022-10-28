@@ -1,12 +1,12 @@
 package amireading;
 
-public interface Aircraft {
-    public abstract void setEngineType(String eng);
+interface Aircraft {
+    public void setEngineType(String eng);
 
 }
 
 class Airplane extends Vehicle implements Aircraft{
-    String engines;
+    private String engines;
 
     @Override
     public void setEngineType(String eng) {
