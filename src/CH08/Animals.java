@@ -27,7 +27,7 @@ class Dog extends Canine {
 }
 
 class MyDogList {
-    private Dog [] dogs = new Dog[2];
+    private final Dog [] dogs = new Dog[2];
     private int nextIndex = 0;
 
     public void add(Dog d) {
