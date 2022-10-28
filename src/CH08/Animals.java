@@ -22,6 +22,7 @@ class Dog extends Canine {
     @Override
     public void myOwnPrint() {
         System.out.println(getName());
+
     }
 }
 
