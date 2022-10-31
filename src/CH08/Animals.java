@@ -26,6 +26,17 @@ class Dog extends Canine {
     }
 }
 
+abstract class Feline extends Animals {
+    public abstract void myOwnPrint();
+}
+
+class Cat extends Feline {
+    @Override
+    public void myOwnPrint() {
+        System.out.println(getName());
+    }
+}
+
 class MyDogList {
     private final Dog [] dogs = new Dog[2];
     private int nextIndex = 0;
@@ -33,8 +44,8 @@ class MyDogList {
     public void add(Dog d) {
         if (nextIndex < dogs.length) {
             dogs[nextIndex] =d;
-            String xname = d.getName();
-            System.out.println("Dog added at " + nextIndex + " " +xname);
+            //String xname = d.getName();
+            System.out.println("Dog added at " + nextIndex + " " +d.getName());
             nextIndex++;
         }
     }
