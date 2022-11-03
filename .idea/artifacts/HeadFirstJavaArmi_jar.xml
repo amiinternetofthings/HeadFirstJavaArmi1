@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="HeadFirstJavaArmi:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/HeadFirstJavaArmi_jar</output-path>
+    <root id="archive" name="HeadFirstJavaArmi.jar">
+      <element id="module-output" name="HeadFirstJavaArmi" />
+    </root>
+  </artifact>
+</component>
