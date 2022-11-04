@@ -1,14 +1,13 @@
 package amireading;
 
-public interface Aircraft {
-    public abstract void setEngineType(String eng);
-
+interface Aircraft {
+    void flyAircraft();
 }
 
 class Airplane extends Vehicle implements Aircraft{
-    String engines;
+    private String engines;
 
-    @Override
+
     public void setEngineType(String eng) {
         engines = eng;
     }
@@ -20,6 +19,11 @@ class Airplane extends Vehicle implements Aircraft{
         int gDoors = getNumberOfDoors();
         System.out.println(gEngine + " " +gBrand +" Number of doors: " + gDoors);
     }
+
+    @Override
+     public void flyAircraft() {
+        System.out.println("\"Fly Aircraft\"");
+    }
 }
 
 class TestAirplane {
@@ -29,6 +33,7 @@ class TestAirplane {
         airplane.setNumberOfDoors(100);
         airplane.setEngineType("General Electric");
         airplane.doSomething();
+        airplane.flyAircraft();
     }
 
 }
