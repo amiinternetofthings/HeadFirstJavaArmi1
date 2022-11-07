@@ -4,12 +4,14 @@ public abstract class Bird {
     private int size;
 
     public Bird() {
+
         size = 27;
+        System.out.println(size);
     }
 
     public Bird(int birdSize) {
         size = birdSize;
-        //System.out.println(size);
+        System.out.println(size);
     }
 
     public int getSize() {
@@ -21,11 +23,15 @@ public abstract class Bird {
 class Duck3 extends Bird{
 
     public Duck3(){
+
         super();
+
     }
 
     public Duck3(int duck3Size) {
+
         super(duck3Size);
+
     }
 
 }
@@ -51,12 +57,11 @@ class Maya extends Bird implements PetBird {
 
 class Duck3Test {
     public static void main(String[] args){
-        Duck3 duck3 = new Duck3();
-        //int dSize = duck3.getSize();
-        System.out.println(duck3.getSize());
+        Duck3 duck3 = new Duck3(999);
+        Duck3 anotherDuck = new Duck3();
 
-        Maya maya = new Maya(5555);
-        //Object a = maya.getClass().toString();
+        Maya maya = new Maya(1234);
+        maya.sayTwit();
         System.out.println(maya.getClass().toString() + " " +maya.getSize());
     }
 
