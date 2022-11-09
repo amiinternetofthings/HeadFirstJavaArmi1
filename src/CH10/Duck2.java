@@ -1,6 +1,7 @@
 package CH10;
 
 public class Duck2 {
+
     private int anyNumber;
     private static int duckCount = 0;
     public static void main(String[] args) {
