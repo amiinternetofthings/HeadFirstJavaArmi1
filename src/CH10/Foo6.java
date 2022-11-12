@@ -14,5 +14,17 @@ public class Foo6 {
         myList.add(foo6);
         foo6.go(5);
         System.out.println(foo6.x + " " + myList.get(0));
+        Foo6.doNumsOldWay();
+    }
+
+    public static void doNumsOldWay() {
+        ArrayList listOfNumbers = new ArrayList();
+        listOfNumbers.add(Integer.valueOf(3));
+        Integer one = (Integer) listOfNumbers.get(0);
+        int intOne = one.intValue();
+        System.out.println(intOne);
+
+
+
     }
 }
